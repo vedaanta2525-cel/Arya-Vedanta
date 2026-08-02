@@ -339,7 +339,30 @@
   display: none !important; 
 
 } 
+/* Hilangkan garis biru saat elemen dipilih (focus) */
+*:focus,
+*:focus-visible,
+a:focus,
+a:focus-visible,
+button:focus,
+button:focus-visible,
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible,
+[tabindex]:focus,
+[tabindex]:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
 
+/* Hilangkan highlight saat tap di mobile */
+* {
+    -webkit-tap-highlight-color: transparent !important;
+}
 </style> 
 <!-- SnippetEnd: Z8CWsVnzW -->
 
